@@ -1,0 +1,5 @@
+#!/bin/bash
+
+source init.sh
+
+mvn -f $local_pom clojure:test

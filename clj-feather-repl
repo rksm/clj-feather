@@ -1,0 +1,7 @@
+#!/bin/bash
+
+source init.sh
+
+port=${1-7888}
+
+mvn -f $local_pom clojure:nrepl -Dclojure.nrepl.port=$port
