@@ -21,10 +21,11 @@ archetypes and such then please move along, nothing to see here!
 
 ## Usage
 
-After the one time  preparation steps (below)
+After the one time preparation steps (below), change into the directory of your
+clojure project and run
 
-- Start a nREPL server on a port: `clj-feather-repl 7889`
-- Run the tests `clj-feather-test`
+- `clj-feather-repl 7889` to start an nREPL server or
+- `clj-feather-test` to run the project tests
 
 `repl-init-scripts/` has some scripts that are loaded with the repl.
 
