@@ -1,4 +1,6 @@
-# clojure-feather
+# clj-feather
+
+![](http://i.imgur.com/9n0uhmQ.jpg)
 
 A leightweight clojure starter.
 
