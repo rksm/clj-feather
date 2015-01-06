@@ -44,3 +44,17 @@
   (load-file (str feather-dir "/repl-init-scripts/ns-browser.clj"))
   (load-file (str feather-dir "/repl-init-scripts/java-reflection.clj")))
 ; (load-file "scripts/start-cljs-brepl.clj")
+
+; -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+; startup notice
+(require 'clojure.string)
+(defn- nrepl-server-coords
+  []
+  (let [cmd (System/getProperty "sun.java.command")]
+    {:port (some->> cmd (re-find #":port ([0-9]+)") second read-string)
+     :host (some->> cmd (re-find #":bind ([^\s]+)") second read-string)}))
+
+(let [server (nrepl-server-coords)]
+  (println (format "nrepl server running on %s:%s"
+                   (:host server) (:port server))))
+

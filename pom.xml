@@ -60,17 +60,13 @@
       <artifactId>system-navigator</artifactId>
       <version>0.1.6</version>
     </dependency>
-
-    <!--pretty printing-->
-    <!--<dependency>-->
-    <!-- <groupId>fipp</groupId>-->
-    <!-- <artifactId>fipp</artifactId>-->
-    <!-- <version>0.5.1</version>-->
-    <!--</dependency>-->
-    <!-- <dependency> -->
-    <!--   <groupId>rewrite-clj</groupId> -->
-    <!--   <artifactId>rewrite-clj</artifactId> -->
-    <!--   <version>0.3.12</version> -->
-    <!-- </dependency> -->
   </dependencies>
+
+  <repositories>
+    <repository>
+      <id>clojars.org</id>
+      <url>http://clojars.org/repo</url>
+    </repository>
+  </repositories>
+
 </project>
