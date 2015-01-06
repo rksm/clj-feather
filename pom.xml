@@ -55,6 +55,12 @@
       <version>0.1.11</version>
     </dependency>
 
+    <dependency>
+      <groupId>org.rksm</groupId>
+      <artifactId>system-navigator</artifactId>
+      <version>0.1.6</version>
+    </dependency>
+
     <!--pretty printing-->
     <!--<dependency>-->
     <!-- <groupId>fipp</groupId>-->

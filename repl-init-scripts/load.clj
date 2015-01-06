@@ -2,11 +2,11 @@
 
 ; classpath discovery
 
-(require '[clojure.java.io :as io])
-(require '[cemerick.pomegranate])
-
 (def common-src-dirs ["src/main/clojure", "src/main/clj", "src/clojure", "src/clj", "src", "classes"])
 (def common-test-dirs ["src/test/clojure", "src/test/clj", "src/test", "test/clojure", "test/clj", "test"])
+
+(require '[clojure.java.io :as io])
+(require '[cemerick.pomegranate])
 
 (defn- first-existing-file
   [paths]
