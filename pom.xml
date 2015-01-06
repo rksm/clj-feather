@@ -18,9 +18,10 @@
           <replScript>${env.CLOJURE_FEATHER}/repl-init-scripts/load.clj</replScript>
           <warnOnReflection>true</warnOnReflection>
 
-          <!--<sourceDirectories>-->
-          <!--  <sourceDirectory>../../clojurescript/src/clj</sourceDirectory>-->
-          <!--</sourceDirectories>-->
+          <!-- <sourceDirectories> -->
+           <!-- <sourceDirectory>../../clojurescript/src/clj</sourceDirectory> -->
+           <!-- <sourceDirectory>${env.CLOJURE_FEATHER}</sourceDirectory> -->
+          <!-- </sourceDirectories> -->
 
         </configuration>
       </plugin>
@@ -40,30 +41,11 @@
       <version>0.2.6</version>
     </dependency>
 
-    <!--for lively clj support (some eval results are jsonified-->
-    <dependency>
-      <groupId>org.clojure</groupId>
-      <artifactId>data.json</artifactId>
-      <version>0.2.3</version>
-    </dependency>
-
     <!--late dependencies-->
     <dependency>
       <groupId>com.cemerick</groupId>
       <artifactId>pomegranate</artifactId>
       <version>0.3.0</version>
-    </dependency>
-
-    <!--namespace discovery-->
-    <dependency>
-      <groupId>org.clojure</groupId>
-      <artifactId>tools.namespace</artifactId>
-      <version>0.2.8</version>
-    </dependency>
-    <dependency>
-      <groupId>org.clojure</groupId>
-      <artifactId>java.classpath</artifactId>
-      <version>0.2.2</version>
     </dependency>
 
     <!--java reflection-->
@@ -74,11 +56,11 @@
     </dependency>
 
     <!--pretty printing-->
-    <dependency>
-     <groupId>fipp</groupId>
-     <artifactId>fipp</artifactId>
-     <version>0.5.1</version>
-    </dependency>
+    <!--<dependency>-->
+    <!-- <groupId>fipp</groupId>-->
+    <!-- <artifactId>fipp</artifactId>-->
+    <!-- <version>0.5.1</version>-->
+    <!--</dependency>-->
     <!-- <dependency> -->
     <!--   <groupId>rewrite-clj</groupId> -->
     <!--   <artifactId>rewrite-clj</artifactId> -->
